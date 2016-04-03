@@ -1,9 +1,9 @@
 <?php
 class DBController {
-	public $host = "localhost";
-	public $user = "utsav";
-	public $password = "utsav";
-	public $database = "students";
+	public $host = "dbms.iiitdmj.ac.in";
+	public $user = "2014196";
+	public $password = "zse2014196";
+	public $database = "test_2014196";
 	public $conn;
 	
 	function __construct() {
@@ -21,7 +21,7 @@ class DBController {
 	}
 	
 	function selectDB($conn) {
-		$sql = "use students";
+		$sql = "use test_2014196";
 		if ($conn->query($sql) === TRUE) {
     			//echo "Database selected successfully";
 		} else {
